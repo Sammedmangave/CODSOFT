@@ -1,0 +1,37 @@
+# include <iostream>
+using namespace std;
+
+int main() 
+{
+	char op;
+	float num1,num2,addition,substraction,division,multiplication;
+  	cout<<"Enter two numbers: ";
+  	cin>>num1>>num2;
+  	cout<<"Enter operator: +, -, *, /: ";
+	cin>>op;
+
+  	switch(op) 
+	{
+
+    	case '+':
+    		addition=num1+num2;
+      	cout<<num1<<"+"<<num2<<"="<<addition;
+      	break;
+
+    	case '-':
+    		substraction=num1-num2;
+      	cout << num1<<"-"<<num2<<"="<<substraction;
+      	break;
+
+    	case '*':
+    		multiplication=num1*num2;
+      	cout<<num1<<"*"<<num2<<"="<<multiplication;
+      	break;
+
+    	case '/':
+    		division=num1/num2;
+      	cout <<num1<<"/"<<num2<<"="<<division;
+      	break;
+	}
+	return 0;
+}
